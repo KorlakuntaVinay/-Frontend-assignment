@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/*------------------------------------------------------------------ Mobile Menu Icon----------------------------------------------------------- */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------para Section------------------------------------------------------------- */
+.para {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.para button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------Features Section----------------------------------------------------------------------- */
+.features {
+    display: flex;
+    padding: 40px 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #ddd;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+/* ----------------------------------------------------------------------------Footer ----------------------------------------------------------*/
+footer {
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+/*---------------------------------------------------RESPONSIVE --------------------------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+  
+}
